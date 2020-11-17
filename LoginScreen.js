@@ -7,8 +7,8 @@ export default class LoginScreen extends Component {
           this.state = {
             email:"",
             password:"",
-            email:"",
-            comfirmpassword:""
+             email:"",
+             comfirmpassword:""
             
           };
         }

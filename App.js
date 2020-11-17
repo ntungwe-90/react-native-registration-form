@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Text, View, StyleSheet, TextInput, button, TouchableOpacity} from 'react-native';
-import LoginScreen from './LoginScreen'
+import LoginScreen from './LoginScreen';
+import ContactsScreen from './ContactsScreen';
+import Contact from './components/Contact'
 
 
 
@@ -9,7 +11,8 @@ class App extends Component{
    super(props)
      this.state = {
        email:"",
-       password:""
+       password:"",
+       names:["dorcas", "sahada", "fiona", "sussan", "nanaya", "rachel"]
      }
    }
  
@@ -21,7 +24,10 @@ class App extends Component{
   render(){
     return (
     <View style={styles.container}>
-      <LoginScreen />
+      {/* <ContactsScreen /> */}
+      <ContactsScreen />
+
+
     {/* <TextInput style={styles.input}
      placeholder="email"
      autoCapitalize="none" 

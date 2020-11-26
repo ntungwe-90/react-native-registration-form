@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Text, View, StyleSheet, TextInput, button, TouchableOpacity} from 'react-native';
 import LoginScreen from './LoginScreen';
 import ContactsScreen from './ContactsScreen';
-import Contact from './components/Contact'
+import Contact from './components/Contact';
+import PetScreen from "./PetScreen";
+import Cats from "./components/Cats"
 
 
 
@@ -24,8 +26,9 @@ class App extends Component{
   render(){
     return (
     <View style={styles.container}>
-      {/* <ContactsScreen /> */}
-      <ContactsScreen />
+       {/* <ContactsScreen />  */}
+      {/* <ContactsScreen />  */}
+      <PetScreen /> 
 
 
     {/* <TextInput style={styles.input}
@@ -65,7 +68,7 @@ class App extends Component{
 
 const styles = StyleSheet.create({
   container:{ 
-    marginTop:100
+    flex:1
   },
   input:{
   backgroundColor:"green",
